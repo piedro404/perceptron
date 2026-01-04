@@ -5,10 +5,10 @@ export class PerceptronBinary {
 
     constructor(inputsSize: number) {
         this.inputsSize = inputsSize;
-        this.initializeWeights();
+        this.initializeWeightsAndBiases();
     }
 
-    initializeWeights() {
+    initializeWeightsAndBiases() {
         this.weights = Array(this.inputsSize)
             .fill(0)
             .map(() => Math.random() * 2 - 1); // Random values between -1 and 1
