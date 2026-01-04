@@ -10,4 +10,8 @@ const perceptron_multiple_layer = new PerceptronMultipleLayer({
     outputSize: 3,
 })
 
-console.log(perceptron_multiple_layer.weights);
+let response = perceptron_multiple_layer.feedforward([
+    1, 0, 1
+]);
+
+console.log(response);
